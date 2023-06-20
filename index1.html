@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Examen Flexbox</title>
+    <style>
+         *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        
+
+        body{
+
+            background-color: rgb(73, 141, 73);
+            color: #100b12;
+          
+        }
+
+       .container{
+        flex-direction: row;
+       
+        gap: 10px;
+        flex-wrap: wrap;
+         width: 750px;       
+         max-width: 1200px;
+              
+       
+       }
+
+
+        .galeria{
+            flex-grow: 1;
+            width: 400px;
+            height: 500px;
+          
+        }
+        
+        .galeria-imagen {
+            width: 150px;
+        
+        
+  
+        /* padding: 30px; */
+        /* background-color: aqua; */
+        
+
+        }
+
+        .imagen{
+            width: 150px;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            padding: 6px;
+        }
+
+        .imagen:hover{
+            cursor: pointer;
+            opacity: 0.7;
+            transform: scale(1.05);
+            transform: rotate(-1.2deg) scale(1.05);
+            filter:grayscale(0.3)
+        }
+
+        .portada{
+            background-color: orange;
+            height: 100px;
+           
+          
+        }
+
+        h2{
+            font-size: 70px;
+            width: 390px;
+            height: 80px;
+            padding: 20px;
+            margin-top: -390;
+           
+        }
+
+        .footer{
+            background-color:#9281b6;
+            display: inline-flex;
+            width: 100%;
+            height: 100px;
+            justify-content: space-between;
+            
+        
+        }
+
+        .footer1{
+            background-color: aquamarine;
+            width: 400px;
+            height: 100px;
+        }
+
+        .footer3{
+            width: 400px;
+            height: 100px;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header class="caja-1">
+            <div class="portada">
+                <h2>CinesFlex</h2>
+                <div class="boton">
+           <a href="link rel="stylesheet href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" >">Ingresar</a>
+            </div>
+            <div>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+            </div>
+        </header>
+        
+        
+        <main class="galeria">
+            
+            <div class="peliculas">
+                <a href="https://www.pelisplus.lat/pelicula/hombre-lobo-por-la-noche/">
+                    <img src="image/imagen 1-1.jpg" class="imagen"
+                    title="Hombre Lobo po la Noche"           
+                    >
+                </a>
+            </div>
+            <div class="peliculas">
+                <a href="https://www.pelisplus.lat/pelicula/el-retorno-de-las-brujas-2/">
+                    <img src="image/imagen 2.jpg" class="imagen"
+                    title="Brujas 2"           
+                    >
+                </a>
+            </div>
+            <div class="peliculas">
+                <a href="https://www.pelisplus.lat/pelicula/amnesico/">
+                    <img src="image/imagen 3.jpg" class="imagen"
+                    title="Blackout"           
+                    >
+                </a>
+            </div>
+        <div class="peliculas">
+            <a href="https://www.pelisplus.lat/pelicula/buenas-noches-mami/">
+                <img src="image/imagen 4.jpg" class="imagen"
+                title="Buenas Noches Mami"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.pelisplus.lat/pelicula/clerks-iii/">
+                <img src="image/imagen 5.jpg" class="imagen"
+                title="Clerks III"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.pelisplus.lat/pelicula/lou/">
+                <img src="image/imagen 6.jpg" class="imagen"
+                title="LOU"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.pelisplus.lat/pelicula/la-maldicion-de-bridge-hollow/">
+                <img src="image/imagen 7.jpg" class="imagen"
+                title="La Maldicion"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.pelisplus.lat/pelicula/la-pasajera/">
+                <img src="image/imagen 8.jpg" class="imagen"
+                title="La Psasajera"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.pelisplus.lat/pelicula/pinocho-2022/">
+                <img src="image/imagen 9.jpg"class="imagen"
+                title="Pinocho"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.netflix.com/cl/title/80174263">
+                <img src="image/imagen 10.jpg" class="imagen"
+                title="Rubia"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.pelisplus.lat/pelicula/esposa-de-alquiler/">
+                <img src="image/imagen 11.jpg" class="imagen"
+                title="Esposa de Alquiler"           
+                >
+            </a>
+        </div>
+        <div class="peliculas">
+            <a href="https://www.youtube.com/watch?v=tmbBXTQ1aMY">
+                <img src="image/imagen 12.jpg" class="imagen"
+                title="El Vestido de la Novia"           
+                >
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <img src="image/footer1.jpg" alt="footer1" class="footer1">
+        </div>
+            <div class="footer2">
+                <p>
+                    Siguenos en todas nuestras redes 
+                    @cineflex
+                </p>
+            </div>
+            
+        <div class="footer3">
+            <img src="image/footer3.jpg" alt="" class="footer3">
+            
+        </div>
+
+    </footer>
+</div>
+</div>
+
+</body>
+</html>
